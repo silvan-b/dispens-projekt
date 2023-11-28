@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+test
 <form id="dispensform">
     <h1>Dispensationsgesuchsformular</h1>
     <!-- Formularelemente -->
@@ -19,25 +19,36 @@
         <option value="none">None</option>
     </select>
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <input type="text" id="name" placeholder="Muster" name="name" required>
 
     <label for="vorname">Vorname:</label>
-    <input type="text" id="vorname" name="vorname" required>
+    <input type="text" id="vorname" name="vorname" required placeholder="Max">
 
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+    <input type="email" id="email" name="email" required placeholder="max@muster.ch">
 
     <label for="mobile">Mobile:</label>
-    <input type="text" id="mobile" name="mobile" required>
+    <input type="text" id="mobile" name="mobile" required placeholder="+41781234567">
 
     <label for="klasse">Klasse:</label>
-    <input type="text" id="klasse" name="klasse" required>
+    <input type="text" id="klasse" name="klasse" required placeholder="Klasse">
 
     <label for="lehrberuf">Lehrberuf:</label>
-    <input type="text" id="lehrberuf" name="lehrberuf" required>
+    <select id="lehrberuf" name="lehrberuf" required>
+        <option value="" disabled selected hidden>Wähle deinen Lehrberuf</option>
+        <option value="beruf1">Detailhandelslehre</option>
+        <option value="beruf2">Elektroberufe</option>
+        <option value="beruf3">Fachangestelle Betreuung</option>
+        <option value="beruf4">Informatikberufe</option>
+        <option value="beruf5">KV- oder Büro-Lehre</option>
+        <option value="beruf6">Mediamatikberufe</option>
+    </select>
 
     <label for="standort">Standort:</label>
-    <input type="text" id="standort" name="standort" required>
+    <select id="standort" name="standort" required>
+        <option value="ort1">Horgen</option>
+        <option value="ort2">Stäfa</option>
+    </select>
 
     <label for="abwvon">Anfangsdatum:</label>
     <input type="date" id="abwvon" name="abwvon" required>
@@ -47,6 +58,7 @@
 
     <label for="grund">Grund:</label>
     <select id="grund" name="grund" required>
+        <option value="" disabled selected hidden>Wähle deinen Grund</option>
         <option value="grund1">Operation</option>
         <option value="grund2">Beerdigung</option>
         <option value="grund3">Ferien</option>
@@ -54,13 +66,13 @@
     </select>
 
     <label for="anzlek">Anzahl Lektionen:</label>
-    <input type="text" id="anzlek" name="anzlek" required>
+    <input type="number" id="anzlek" name="anzlek" required>
 
     <label for="betrlp">Betroffene Lehrpersonen:</label>
-    <input type="text" id="betrlp" name="betrlp" required>
+    <input type="text" id="betrlp" name="betrlp" required placeholder="V. Demir, S. Lyner, ...">
 
     <label for="bemmit">Bemerkungen/Mitteilungen:</label>
-    <input type="text" id="bemmit" name="bemmit" required>
+    <input type="text" id="bemmit" name="bemmit" required placeholder="Deine Mitteilung">
 
 
     <button class="button-64" role="button" onclick="submitForm()"><span class="text">Formular abschicken</span></button>

@@ -1,8 +1,8 @@
 body{
     background-color: beige;
     font-family: Helvetica;
-    color: white;
-    background-image: linear-gradient(144deg, rgba(175, 64, 255, 0.5), rgba(91, 66, 243, 0.5) 50%, rgba(0, 221, 235, 0.5));
+    color: black;
+    background-image: linear-gradient(144deg, rgba(175, 64, 255, 0.06), rgba(252, 252, 253, 0.5) 50%, rgba(0, 221, 235, 0.01));
 }
 #dispensform{
     display: flex;
@@ -30,7 +30,7 @@ margin-top: 5%;
 .button-64 {
     margin-top: 5%;
     align-items: center;
-    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    background-image: linear-gradient(144deg, #08a0e1, rgba(8, 160, 225, 0.5) 50%, rgba(8, 160, 225, 0));
     border: 0;
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;

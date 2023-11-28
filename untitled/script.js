@@ -6,7 +6,7 @@ function submitForm() {
     // da JavaScript im Browser nicht direkt auf eine SQL-Datenbank zugreifen kann.
     // Dies ist nur ein einfaches Beispiel:
 
-    const formData = new FormData(document.getElementById('myForm'));
+    const formData = new FormData(document.getElementById('dispensform'));
 
     // Hier können Sie die Daten an einen Server senden
     // Zum Beispiel mit Hilfe von Fetch oder XMLHttpRequest
